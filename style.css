@@ -22,6 +22,10 @@ a {
   color: rgb(245, 173, 74);
 }
 
+.indent {
+  margin-top: 0.6em;
+}
+
 .container {
   height: auto;
   width: 50%;
