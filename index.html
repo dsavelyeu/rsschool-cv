@@ -1,16 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cv-html</title>
-    <link href="style.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cv3-html</title>
+  <link href="style.css" rel="stylesheet">
 </head>
+
 <body>
+  <div class="container">
     <header class="header">
+      <div class="headerChild">
         <h1>DZMITRY SAVELYEU</h1>
         <h2>Field Service Engineer "Medical Equipment"</h2>
-      </header>
+        <p>dsavelyeu@gmail.com</p>
+      </div>
+      <div class="headerChild"> <img class="rsLogo" src="./img/avatar.png" width="298" height="347" alt="rs logo">
+      </div>
+
+
+
+    </header>
+
+
+    <main class="main">
+
+      <div class="personalInfo">
+        <div class="personalInfoChild">
+          <h2>Personal Info</h2>
+          <ul>
+            <li>+372 (29) 325-01-13</li>
+            <li>dsavelyeu@gmail.com</li>
+            <li>www.linkedin.com/in/dsavelyeu</li>
+          </ul>
+        </div>
+        <div class="personalInfoChild">
+          <h2>Skills</h2>
+          <ul>
+            <li>Problem Solving</li>
+            <li>Critical Thinking</li>
+            <li>Teamwork</li>
+          </ul>
+        </div>
+        <div class="personalInfoChild">
+          <h2>Languages</h2>
+          <ul>
+            <li>Belarussian: Intermediate</li>
+            <li>Russian: Upper-Intermediate</li>
+            <li>English: Pre-Intermediate</li>
+          </ul>
+        </div>
+      </div>
+
+
+
+      <h2>Education</h2>
+      <p>Belarusian State University of Informatics and Radioelectronics</p>
+
+      <h2>Experience</h2>
+      <p style="font-size:120%;">2015 - Present: Medicinos LLC, Service Engineer</p>
+      <p>-Service and Mainentanance of Medical Equipment, Ophtalmology and Surgery way. Sistem Administration of 2
+        servers and 15 user PCs</p>
+      <p style="font-size:120%;">2012 - 2015: Data-By LLC</p>
+      <p>-Service and Mainentanance of Indastrial Lasers and Markers</p>
+
+      <h2>JavaScript Example (Codewars)</h2>
+
+      <p>An isogram is a word that has no repeating letters, consecutive or non-consecutive.
+        Implement a function that determines whether a string that contains only letters is an isogram.
+        Assume the empty string is an isogram. Ignore letter case.</p>
+
+      <p class="indent">Example: (Input -plugin-> Output)</p>
+      <ul>
+        <li>"Dermatoglyphics" --> true</li>
+        <li>"aba" --> false</li>
+        <li>"moOse" --> false (ignore letter case)</li>
+      </ul>
+
+      <div class="code">
+        <pre><code>function isIsogram(str) {
+    let count = 0;
+    let result = false;
+               
+         for (let i = 0; i &lt; str.length; i++) {
+                  
+           for (let j = 0; j &lt; str.length; j++) {
+                
+             if (str[i].toUpperCase() == str[j].toUpperCase()) {
+               count++;
+             }
+           }
+         }
+         count = count / str.length;
+               
+         if (count > 1) {
+           result = false;
+         } else {
+           result = true;
+         }
+                  
+         return result;
+       }
+                  
+isIsogram("moOse");</code></pre>
+      </div>
+
+      <h2>About Me</h2>
+      <p>Service Engineer with 10+ years of experience in Medical Equipment innovation, production, and maintenance.
+        Had an internship in Spain, France, Italy, Great Britan. Seeking to leverage leadership abilities and
+        engineering competency in the role of Senior Engineer.</p>
+
+    </main>
+
+    <footer class="footer">
+      <div><a href="https://rs.school/js/"><img class="rsLogo" src="./img/rs_school_js.svg" width="225" height="100"
+            alt="rs logo"></a>
+      </div>
+      <div>
+        <nav class="menu">
+          <ul>
+            <li><a href="#">Developed: 2022</a></li>
+            <li><a href="https://github.com/dsavelyeu/rsschool-cv/tree/rsschool-cv-html">Github Source</a></li>
+            <li><a href="https://rs.school">RS-School</a></li>
+          </ul>
+        </nav>
+
+      </div>
+    </footer>
+
+  </div>
 </body>
+
 </html>

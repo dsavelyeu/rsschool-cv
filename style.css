@@ -1,12 +1,72 @@
-
 html,
 body {
   height: 100%;
   margin: 0;
 }
 
+h1 {
+  color: rgb(245, 173, 74);
+}
+
+h2 {
+  color: rgb(199, 114, 48);
+  margin-bottom: 0.4em;
+}
+
+p {
+  color: rgb(83, 120, 159);
+  margin: 0;
+}
+
+a {
+  color: rgb(245, 173, 74);
+}
+
+.indent {
+  margin-top: 0.6em;
+}
+
+.container {
+  height: auto;
+  width: 50%;
+  margin: auto; /* to center */
+  padding-left: 64px;
+  padding-right: 64px;
+  background-color: rgb(43, 43, 43);
+}
+
 .header {
-    padding: 30px;
-    background-color: rgb(28, 72, 129);
-    color: white;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 32px;
+}
+
+.main {
+  padding-top: 32px;
+  color: rgb(83, 120, 159);
+  width: 100%;
+}
+
+.personalInfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.code {
+  background-color: black;
+  border-color: white;
+  color: rgb(194, 194, 194);
+  font-size: large;
+  padding: 30px;
+}
+
+.footer {
+  display: flex;
+  padding-top: 50px;
+  justify-content: space-between;
+}
+
+.menu {
+  font-size: large;
+}

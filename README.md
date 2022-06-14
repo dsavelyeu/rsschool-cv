@@ -1,3 +1,4 @@
 # rsschool-cv-html
 
-https://github.com/dsavelyeu/rsschool-cv/blob/rsschool-cv-html/index.html
+https://dsavelyeu.github.io/rsschool-cv/cv
+https://dsavelyeu.github.io/rsschool-cv/
